@@ -1,0 +1,102 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+
+body {
+  background: #000000;
+  /* background: #208BFF; */
+  display: grid;
+  place-items: center;
+  
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  
+  padding: 0;
+  margin: 0 auto;
+}
+
+img {
+  margin: auto;
+  display: block;
+  max-width: 100%; /* Ensures the image doesn't overflow the icon */
+}
+
+
+.id_card {
+  margin-top: 15vh;
+}
+
+
+.id_card_front {
+  width: 540px;
+  margin: 50px;
+}
+
+.id_card_back {
+  width: 540px;
+  height: 347px;
+  margin: 50px;
+  
+  background-color: #ffffff;
+  /* display: block; */
+  
+  overflow-y: auto;  
+  /* box-shadow : 0px 0px 50px 5px #cb7af4; */
+}
+
+.id_card_back_text {
+  margin: 20px;
+  background-color: #ffffff;
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+.id_card_back_caption {
+  margin: 20px;
+  color: white;
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+a {
+  color: #a5a5a5;
+}
+
+a:hover {
+  color: #cb7af4;
+  transition: color 0.3s;
+}
+
+
+
+#suki_card {
+    width: 540px;
+    height: 347px;
+    perspective: 1000px;
+    position: relative;
+}
+
+#suki_card .id_card_front,
+#suki_card .id_card_back {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.6s;
+}
+
+#suki_card .id_card_front {
+    transform: rotateY(0deg);
+}
+
+#suki_card .id_card_back {
+    transform: rotateY(180deg);
+}
+
+#suki_card.flipped .id_card_front {
+    transform: rotateY(-180deg);
+}
+
+#suki_card.flipped .id_card_back {
+    transform: rotateY(0deg);
+}
