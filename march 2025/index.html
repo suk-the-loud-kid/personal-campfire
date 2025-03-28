@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    
+    <title>suk-i-diary</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <div class="intro">
+        <p>here's my diary...</p>
+        <p>i put everything in this little album and keep them forever</p>
+        <p>never kill yourself !!!</p>
+    </div>
+
+    <div class="diary_container">
+        <!-- previous button-->
+        <button class="btn" id="prev_btn">
+            ✷
+        </button>
+
+        <!-- book -->
+        <div class="diary" id="diary">
+
+
+            <!-- 
+                current issues:
+                * flip animation is not working
+            -->
+
+
+            <!-- page 01 -->
+            <div class="diary_page" id="diary_page_01">
+                <div class="diary_page_front">
+                    <div class="diary_front_contents" id="front_01_contents">
+                        <img class="image" src="https://cdn.glitch.global/ace7b4dd-43f3-45e0-8341-12027013fb74/front_01.png?v=1743147533799">
+                    </div>
+                </div>
+                <div class="diary_page_back">
+                    <div class="diary_back_contents" id="back_01_contents">
+                        <a id="open_btn_01">
+                            <img class="image" src="https://cdn.glitch.global/ace7b4dd-43f3-45e0-8341-12027013fb74/back_01.png?v=1743147686263">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- page 02 -->
+            <div class="diary_page" id="diary_page_02">
+                <div class="diary_page_front">
+                    <div class="diary_front_contents" id="front_02_contents">
+                        <a id="open_btn_02">
+                            <img class="image" src="https://cdn.glitch.global/ace7b4dd-43f3-45e0-8341-12027013fb74/front_02.png?v=1743147745648">
+                        </a>
+                    </div>
+                </div>
+                <div class="diary_page_back">
+                    <div class="diary_back_contents" id="back_02_contents">
+                        <a id="open_btn_03">
+                            <img class="image" src="https://cdn.glitch.global/ace7b4dd-43f3-45e0-8341-12027013fb74/back_02.png?v=1743151103268">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- page 03 -->
+            <div class="diary_page" id="diary_page_03">
+                <div class="diary_page_front">
+                    <div class="diary_front_contents" id="front_03_contents">
+                        <a id="open_btn_04">
+                            <img class="image" src="https://cdn.glitch.global/ace7b4dd-43f3-45e0-8341-12027013fb74/front_03.png?v=1743151156685">
+                        </a>
+                    </div>
+                </div>
+                <div class="diary_page_back">
+                    <div class="diary_back_contents" id="back_03_contents">
+                        <a id="open_btn_05">
+                            <img class="image" src="https://cdn.glitch.global/ace7b4dd-43f3-45e0-8341-12027013fb74/back_03.png?v=1743151189498">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- page 04 -->
+            <div class="diary_page" id="diary_page_04">
+                <div class="diary_page_front">
+                    <div class="diary_front_contents" id="front_04_contents">
+                        <a id="open_btn_06">
+                            <img class="image" src="https://cdn.glitch.global/ace7b4dd-43f3-45e0-8341-12027013fb74/front_04.png?v=1743151213866">
+                        </a>
+                    </div>
+                </div>
+                <div class="diary_page_back">
+                    <div class="diary_back_contents" id="back_04_contents">
+                        <a id="open_btn_07">
+                            <img class="image" src="https://cdn.glitch.global/ace7b4dd-43f3-45e0-8341-12027013fb74/back_04.png?v=1743151234010">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- page 05 (n-1) -->
+            <div class="diary_page" id="diary_page_05">
+                <div class="diary_page_front">
+                    <div class="diary_front_contents" id="front_05_contents">
+                        <a id="open_btn_08">
+                            <img class="image" src="https://cdn.glitch.global/ace7b4dd-43f3-45e0-8341-12027013fb74/front_05.png?v=1743151265230">
+                        </a>
+                    </div>
+                </div>
+                <div class="diary_page_back">
+                    <div class="diary_back_contents" id="back_05_contents">
+                        <a id="open_btn_09">
+                            <img class="image" src="https://cdn.glitch.global/ace7b4dd-43f3-45e0-8341-12027013fb74/back_05.png?v=1743151281532">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- page 06 (n) -->
+            <div class="diary_page" id="diary_page_06">
+                <div class="diary_page_front">
+                    <div class="diary_front_contents" id="front_06_contents">
+                        <a id="open_btn_10">
+                            <img class="image" src="https://cdn.glitch.global/ace7b4dd-43f3-45e0-8341-12027013fb74/front_06.png?v=1743151304123">
+                        </a>
+                    </div>
+                </div>
+                <div class="diary_page_back">
+                    <div class="diary_back_contents" id="back_06_contents">
+                        <a id="open_btn_11">
+                            <img class="image" src="https://cdn.glitch.global/ace7b4dd-43f3-45e0-8341-12027013fb74/back_06.png?v=1743151320803">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- next button -->
+        <button class="btn" id="next_btn">
+            ✷
+        </button>
+    </div>
+    
+    
+  </body>
+</html>
